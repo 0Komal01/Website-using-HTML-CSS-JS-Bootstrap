@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Admission Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #H4, label {
+            color: #f307df;
+        }
+        .next-btn {
+            background-color: #6f42c1;
+            border-color: #6f42c1;
+        }
+    </style>
+</head>
+<body style="   background-image: url('website/student_info.png');background-size: cover;background-position: center;background-repeat: no-repeat;background-attachment: fixed;color: #f8f9fa;">
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 form-container" style=" background-color: rgba(255, 255, 255, 0.4);padding: 30px;border-radius: 15px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);margin-top: 20px;">
+            <h2 class="form-title text-center" style="color: #f81c7f;font-weight: bold; margin-bottom: 20px;color: #343a40;">Online Admission Form</h2>
+            <p class="text-center">Step 2/2</p>
+
+            <!-- Student Information -->
+            <h4 id="H4">Student's Information</h4>
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+                <span id="firstNameError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name">
+                <span id="lastNameError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" class="form-control" id="dob">
+                <span id="dobError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select class="form-control" id="gender">
+                    <option value="">Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+                <span id="genderError" class="error-message"></span>
+            </div><br><br>
+
+            <!-- Parent/Guardian Information -->
+            <h4 id="H4">Parent/Guardian Information</h4>
+            <div class="form-group">
+                <label for="parentName">Parent/Guardian Name:</label>
+                <input type="text" class="form-control" id="parentName" placeholder="Enter Parent/Guardian Name">
+                <span id="parentNameError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="parentEmail">Parent/Guardian Email:</label>
+                <input type="email" class="form-control" id="parentEmail" placeholder="Enter Parent/Guardian Email">
+                <span id="parentEmailError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="parentPhone">Parent/Guardian Phone:</label>
+                <input type="text" class="form-control" id="parentPhone" placeholder="Enter Parent/Guardian Phone">
+                <span id="parentPhoneError" class="error-message"></span>
+            </div><br><br>
+
+            <!-- Address for Communication -->
+            <h4 id="H4">Address for Communication</h4>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter Address">
+                <span id="addressError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="state">State:</label>
+                <select class="form-control" id="state">
+                    <option value="">Select State</option>
+                    <option>Gujarat</option>
+                    <option>Maharashtra</option>
+                    <option>Rajasthan</option>
+                </select>
+                <span id="stateError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" class="form-control" id="city" placeholder="Enter City">
+                <span id="cityError" class="error-message"></span>
+            </div>
+
+            <button type="button" class="btn next-btn" onclick="validateStudentInfoForm()">submit</button>
+        </div>
+    </div>
+</div>
+
+<script src="FormValidation.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
