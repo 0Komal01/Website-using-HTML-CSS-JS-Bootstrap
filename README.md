@@ -28,6 +28,8 @@ A responsive front-end website for a fictional school, built using **HTML**, **C
 Just open `index.html` in your browser.
 
 ## Snaphot
-<img width="431" height="638" alt="image" src="https://github.com/user-attachments/assets/b9e60a54-8ec3-41f9-a9a7-f09a95407a57" /><br><br>
+<img width="865" height="1223" alt="image" src="https://github.com/user-attachments/assets/fab4fcfb-4582-49a8-a76b-4ec5755ee824" /><br><br>
+![Uploading image.png…]()
+
 
 
